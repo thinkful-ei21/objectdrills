@@ -8,11 +8,11 @@ function makeStudentsReport(data) {
   return report;
 }
 
-/* From here down, you are not expected to 
-   understand.... for now :)  
-   
+/* From here down, you are not expected to
+   understand.... for now :)
+
    Nothing to see here!
-   
+
 */
 
 // tests
@@ -58,3 +58,34 @@ function testIt() {
 }
 
 testIt();
+
+
+const studentData = [
+  {
+    name: 'Tim',
+    status: 'Current student',
+    course: 'Biology',
+  },
+  {
+    name: 'Sue',
+    status: 'Withdrawn',
+    course: 'Mathematics',
+  },
+  {
+    name: 'Liz',
+    status: 'On leave',
+    course: 'Computer science',
+  },
+];
+
+function enrollInSummerSchool(students) {
+  // your code here
+  return students.map(function(students)  {
+    return {
+    name: students.name,
+    status: 'In Summer school',
+    course: students.course
+
+    }
+  })
+}
