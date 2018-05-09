@@ -73,3 +73,13 @@ for ( let i = 0; i < staffing.length; i++){
 	let groups = staffing[i];
 	console.log(staffing.jobTitle "," + staffing.name + "reports to " + staffing.boss)
 }
+
+//I ran out of time so i stared doing #7 firstName
+
+function moreStuff(newobjs){
+	var text = " ";
+	var x;
+	 for (x in newobjs)
+	 	text += x + `` + newobjs[x]
+
+}
