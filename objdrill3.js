@@ -36,3 +36,20 @@ const hobbitses = {
 };
 
 console.log(`The forth meal of the hobbitual day is ${hobbitses.meals[3]}`);
+
+
+let newObjects = [
+	{name: "john",
+	jobTitle: "teacher"	},
+	{name: "brian",
+	jobTitle: "coach"	}
+
+]
+
+function moreStuff(newobjs){
+	var text = " ";
+	var x;
+	 for (x in newobjs)
+	 	text += x + `` + newobjs[x] 
+
+}
