@@ -24,12 +24,12 @@ function updateObject(obj) {
 
 
 
-/* From here down, you are not expected to 
-   understand.... for now :)  
-   
-   
+/* From here down, you are not expected to
+   understand.... for now :)
+
+
    Nothing to see here!
-   
+
 */
 
 (function testUpdateObject() {
@@ -38,7 +38,7 @@ function updateObject(obj) {
     dogs: 'dogs',
   };
   var newObj = updateObject(oldObj);
-  if (typeof newObj !== 'object') { 
+  if (typeof newObj !== 'object') {
     console.error('ERROR: `createMyObject` must return an object');
     return false
   }
@@ -59,5 +59,19 @@ function updateObject(obj) {
     return false;
   }
   console.log('SUCCESS: `updateObject` works correctly!');
-  
+
 })();
+
+
+function personMaker() {
+  var person = {
+    firstName: 'Paul',
+    lastName: 'Jones',
+    // replace `null` with a function that uses self reference to return
+    // full name
+    fullName: function(){
+      return this.firstName + " " + this.lastName
+    },
+  };
+  return person;
+}
