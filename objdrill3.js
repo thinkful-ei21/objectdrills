@@ -42,14 +42,34 @@ let newObjects = [
 	{name: "john",
 	jobTitle: "teacher"	},
 	{name: "brian",
-	jobTitle: "coach"	}
-
+	jobTitle: "coach"	},
+	{name: "calvin",
+	jobTitle: "driver"	}
 ]
 
 function moreStuff(newobjs){
 	var text = " ";
 	var x;
 	 for (x in newobjs)
-	 	text += x + `` + newobjs[x] 
+	 	text += x + `` + newobjs[x]
 
+}
+
+
+
+
+let staffing = [
+	{name: "john",
+	jobTitle: "teacher",
+  boss: `brian`      },
+	{name: "brian",
+	jobTitle: "coach"	},
+	{name: "calvin",
+	jobTitle: "driver",
+   boss: `brian`       }
+]
+
+for ( let i = 0; i < staffing.length; i++){
+	let groups = staffing[i];
+	console.log(staffing.jobTitle "," + staffing.name + "reports to " + staffing.boss)
 }
