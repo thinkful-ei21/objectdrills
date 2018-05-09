@@ -30,3 +30,9 @@ function stuff(object) {
 }
 
 console.log(stuff(object));
+
+const hobbitses = {
+	meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+};
+
+console.log(`The forth meal of the hobbitual day is ${hobbitses.meals[3]}`);
